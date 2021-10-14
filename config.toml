@@ -74,7 +74,8 @@ algolia_apiKey = "d30af47c430efcbae42aa7e855dbf164"
 algolia_index = "crawler_docs.r3.com_docsearch"
 
 # Google Tag Manager code setup
-googleTagManagerID = "G-NCYRYSGJ7C"
+# googleTagManagerID = "G-NCYRYSGJ7C"
+googleTagManagerID = "GTM-5FP5RN3"
 
 # See https://gohugo.io/templates/internal/#google-analytics
 # googleAnalytics = "283616090"
