@@ -44,7 +44,7 @@ setting up a network.
 
 Apache JMeter runs tests that repeatedly trigger an action, wait for a response and record start/success/failure
 timings and so on, and allow to view the result data interactively or rendered as reports in various formats. Run controls
-like parallelising tasks, running tasks in a specific order and count and time based repetitions are already built in.
+like parallelising tasks, running tasks in a specific order and count and time based repetitions are already built-in.
 
 The interactions with the system under test are done via so called *samplers* (see [JMeter Samplers](jmeter-samplers.md)) that can be
 triggered by JMeter and then
@@ -59,7 +59,7 @@ the test definition.
 #### Interactive Mode
 
 By default, JMeter runs in interactive mode - in other words, it brings up a graphical user interface (GUI) that allows the user to
-create, view, modify and run a test definition. Tests can either be in process (i.e. the sampler runs in the GUI
+create, view, modify and run a test definition. Tests can either be in process (i.e., the sampler runs in the GUI
 process) or can be fanned out to a set of JMeter server instances that will run under the control of a JMeter client
 connected to them (see [Server Mode](#jmeter-server)).
 
