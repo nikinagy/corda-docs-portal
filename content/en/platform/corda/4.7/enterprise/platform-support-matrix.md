@@ -20,16 +20,31 @@ Production use of Corda Enterprise 4.7 is only supported on Linux OS, see detail
 
 ## JDK support
 
-Corda Enterprise 4.7 has been tested and verified to work with **Oracle JDK 8 JVM 8u251** and **Azul Zulu Enterprise 8u252**, for Azure deployment downloadable from
+Corda Enterprise 4.8 has been tested and verified to work with **Oracle JDK 8 JVM 8u251** and **Azul Zulu Enterprise 8u252**, for Azure deployment downloadable from
 [Azul Systems](https://www.azul.com/downloads/azure-only/zulu/).
 
-Other distributions of the [OpenJDK](https://openjdk.java.net/) are not officially supported but should be compatible with Corda Enterprise 4.7.
+Other distributions of the [OpenJDK](https://openjdk.java.net/) are not officially supported but should be compatible with Corda Enterprise 4.8.
 
 {{< warning >}}
 In accordance with the [Oracle Java SE Support Roadmap](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html),
 which outlines the end of public updates of Java SE 8 for commercial use, please ensure you have the correct Java support contract in place
 for your deployment needs.
 {{< /warning >}}
+
+### JDKs for development
+
+Install the Java 8 JDK. Corda requires at least version 8u171, but do not currently support Java 9 or higher for this version of Corda. Corda has been tested against the following Java builds:
+
+* [Oracle JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Amazon Corretto](https://aws.amazon.com/corretto/)
+* [Red Hat’s OpenJDK](https://developers.redhat.com/products/openjdk/overview/)
+* [Zulu’s OpenJDK](https://www.azul.com/)
+
+{{< note >}}
+OpenJDK builds often exclude JavaFX, which is required by the Corda GUI tools. Corda supports only Java 8.
+{{< /note >}}
+
+If you are using Windows, you must also add Java to the PATH environment variable by following the instructions in the [Oracle documentation](https://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html#path).
 
 ## Operating systems supported in production
 

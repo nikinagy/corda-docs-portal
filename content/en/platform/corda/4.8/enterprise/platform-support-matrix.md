@@ -31,6 +31,21 @@ which outlines the end of public updates of Java SE 8 for commercial use, please
 for your deployment needs.
 {{< /warning >}}
 
+### JDKs for development
+
+Corda requires at least version 8u171 of the Java 8 JDK, but does not currently support Java 9 or higher. Corda has been tested against the following Java builds:
+
+* [Oracle JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Amazon Corretto](https://aws.amazon.com/corretto/)
+* [Red Hat’s OpenJDK](https://developers.redhat.com/products/openjdk/overview/)
+* [Zulu’s OpenJDK](https://www.azul.com/)
+
+{{< note >}}
+OpenJDK builds often exclude JavaFX, which is required by the Corda GUI tools. Corda supports only Java 8.
+{{< /note >}}
+
+If you are using Windows, you must also add Java to the PATH environment variable by following the instructions in the [Oracle documentation](https://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html#path).
+
 ## Operating systems supported in production
 
 {{< table >}}
